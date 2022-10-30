@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.predict
+{
+    width:500px;
+	height:600px;
+	margin:5% left;
+	background:rgba(0,0,0,0.3);
+    position:absolute;
+    top : 10%;
+    left : 30%;
+    font-size:15px;
+    font-family:Arial Black;
+    overflow: hidden;
+}
+
+.fullpage {
+  background-image: linear-gradient(to right, #1aff8c, #e6ffe6);
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Your Demands Using Our Model</title>
+</head>
+<body class="fullpage">
+<br>
+<form  action ="/predict"  class="predict" method ="post">
+    <div>
+         <label for="category">Choose a category:</label>
+  <select name="category" id="category">
+
+      <option value="Beverages">Beverages</option>
+      <option value="Extras">Extras</option>
+      <option value="Soup">Soup</option>
+      <option value="Other Snacks">Other Snacks</option>
+      <option value="Salad">Salad</option>
+      <option value="Rice Bowl">Rice Bowl</option>
+      <option value="Starters">Starters</option>
+      <option value="Sandwich">Sandwich</option>
+      <option value="Pasta">Pasta</option>
+      <option value="Desert">Desert</option>
+      <option value="Biryani">Biryani</option>
+       <option value="Pizza">Pizza</option>
+       <option value="Fish">Fish</option>
+       <option value="Seafood">Seafood</option>
+
+  </select>
+  <br><br>
+    </div>
+    <div>
+        <label for="cuisine">Choose your  cuisine:</label>
+  <select name="cuisine" id="cuisine">
+
+      <option value="Thai">Thai</option>
+      <option value="Indian">Indian</option>
+      <option value="Italian">Italian</option>
+      <option value="Continental">Continental</option>
+
+  </select>
+    </div>
+    <br>
+    <div>
+        <label for="weeks">Weeks(0-11):</label>
+
+         <input type="number" id="weeks" name="weeks"
+         min="0" max="11">
+    </div>
+    <br>
+    <div>
+        <label for="checkout price">Check Out Price:</label>
+
+         <input type="number" id="checkout price" name="checkout price">
+    </div>
+    <br>
+     <div>
+        <label for="base price">Base Price:</label>
+
+         <input type="number" id="base price" name="base price">
+    </div>
+    <br>
+    <div>
+  <label >Email for promotion?</label>
+
+<input type="radio" name="Email promotion" value="yes">Yes</input>
+
+<input type="radio" name="Email promotion" value="no">No</input>
+
+</div>
+    <br>
+    <div>
+      <label>Homepage Featured?</label>
+
+<input type="radio" name="Homepage Featured" value="yes">Yes</input>
+
+<input type="radio" name="Homepage Featured" value="no">No</input>
+    </div>
+    <br>
+    <div>
+        <label for="City Code">City Code:</label>
+
+       <input type="number" id="City Code" name="City Code"
+       >
+    </div>
+    <br>
+    <div>
+        <label for="Region Code">Region Code:</label>
+
+       <input type="number" id="Region Code" name="Region Code"
+       >
+    </div>
+    <br>
+     <div>
+        <label for="Operational Area">Operational Area:</label>
+
+       <input type="number" id="Operational Area" name="Operational Area"
+       >
+    </div>
+    <br>
+      <div>
+        <label for="Center Type">Center Type:</label>
+  <select name="Center Type" id="Center Type">
+
+      <option value="TYPE_A">TYPE_A</option>
+      <option value="TYPE_B">TYPE_B</option>
+      <option value="TYPE_C">TYPE_C</option>
+
+  </select>
+    </div>
+    <br>
+  <input type="submit" class="button" value="predict">
+  <br>
+<br>
+
+     {{ prediction_text }}
+</form>
+
+
+</body>
+</html>
