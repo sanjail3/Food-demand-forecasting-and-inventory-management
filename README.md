@@ -14,7 +14,9 @@ food we made it.We used Flask framwork for developing web and Firebase for datab
 ![This is an image](Images/aboutdata.png)
 
 1.Historical data of demand for a product-center combination(Weeks:1 to 145)
+
 2.Product(Meal) features such as category,sub-category,current price and discount
+
 3.Information for fulfillment center like center area, city information etc.
 
 Dataset Collected from kaggle [link of dataset ](https://www.kaggle.com/datasets/kannanaikkal/food-demand-forecasting)
