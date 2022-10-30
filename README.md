@@ -10,7 +10,7 @@ predicting the future demands for specific restaurents using previous weeks(0-14
 and we made inventory management for specific food industry
 and we  added blockchain technology for tracing the 
 food we made it.We used Flask framwork for developing web and Firebase for database.
-###About the DataSet
+### About the DataSet
 ![This is an image](Images/aboutdata.png)
 
 1.Historical data of demand for a product-center combination(Weeks:1 to 145)
